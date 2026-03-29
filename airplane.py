@@ -44,7 +44,6 @@ screen.onkey(turn_right, "d")
         self.t.fd(dt*100)
         if self.time + 5 <= time.time():
             self.t.hideturtle()
-            bullets.remove(self)
             return
 
 while running:
