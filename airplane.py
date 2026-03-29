@@ -30,3 +30,28 @@ screen.onkey(move_forward, "w")
 screen.onkey(move_backward, "s")
 screen.onkey(turn_left, "a")
 screen.onkey(turn_right, "d")
+  self.t = turtle.Turtle()
+        self.t.shape("circle")
+        self.t.shapesize(0.5, 0.5)
+        self.t.color("red")
+        self.t.penup()
+        self.t.speed(0)
+        self.t.goto(t.xcor(), t.ycor())
+        self.t.setheading(t.heading())
+        self.time = time.time()
+
+    def move(self):
+        self.t.fd(dt*100)
+        if self.time + 5 <= time.time():
+            self.t.hideturtle()
+            bullets.remove(self)
+            return
+
+while running:
+    curtime = time.time()
+    dt = curtime - last_time
+    
+    last_time = curtime
+    for i in bullets:
+        i.move()
+    screen.update()
