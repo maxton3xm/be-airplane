@@ -1,7 +1,7 @@
 import turtle, time
 t = turtle.Turtle()
 t.color("blue")
-t.speed(0)
+t.speed(-3)
 
 last_time = 0
 
@@ -39,6 +39,5 @@ while running:
     dt = curtime - last_time
     
     last_time = curtime
-    for i in bullets:
         i.move()
     screen.update()
