@@ -1,7 +1,7 @@
 import turtle, time
 t = turtle.Turtle()
 t.color("blue")
-t.speed(-3)
+t.speed(0)
 
 last_time = 0
 
@@ -39,5 +39,4 @@ while running:
     dt = curtime - last_time
     
     last_time = curtime
-        i.move()
     screen.update()
