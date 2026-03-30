@@ -1,5 +1,5 @@
 import turtle, time
-
+bullets={}
 t = turtle.Turtle()
 t.color("blue")
 t.speed(0)
@@ -21,24 +21,13 @@ def turn_left():
 
 def turn_right():
     t.right(15)
-
-def shoot():
-    b=bullet()
-    bullets.append(b)
+   
 running = True
 screen.onkey(move_forward, "w")
 screen.onkey(move_backward, "s")
 screen.onkey(turn_left, "a")
 screen.onkey(turn_right, "d")
   self.t = turtle.Turtle()
-        self.t.shape("circle")
-        self.t.shapesize(0.5, 0.5)
-        self.t.color("red")
-        self.t.penup()
-        self.t.speed(0)
-        self.t.goto(t.xcor(), t.ycor())
-        self.t.setheading(t.heading())
-        self.time = time.time()
 
     def move(self):
         self.t.fd(dt*100)
