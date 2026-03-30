@@ -26,7 +26,6 @@ screen.onkey(move_forward, "w")
 screen.onkey(move_backward, "s")
 screen.onkey(turn_left, "a")
 screen.onkey(turn_right, "d")
-self.t = turtle.Turtle()
 
 while running:
     curtime = time.time()
