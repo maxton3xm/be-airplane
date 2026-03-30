@@ -28,12 +28,6 @@ screen.onkey(turn_left, "a")
 screen.onkey(turn_right, "d")
 self.t = turtle.Turtle()
 
-    def move(self):
-        self.t.fd(dt*100)
-        if self.time + 5 <= time.time():
-            self.t.hideturtle()
-            return
-
 while running:
     curtime = time.time()
     dt = curtime - last_time
