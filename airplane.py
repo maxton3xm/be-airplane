@@ -1,5 +1,4 @@
 import turtle, time
-bullets={}
 t = turtle.Turtle()
 t.color("blue")
 t.speed(0)
@@ -27,7 +26,7 @@ screen.onkey(move_forward, "w")
 screen.onkey(move_backward, "s")
 screen.onkey(turn_left, "a")
 screen.onkey(turn_right, "d")
-  self.t = turtle.Turtle()
+self.t = turtle.Turtle()
 
     def move(self):
         self.t.fd(dt*100)
